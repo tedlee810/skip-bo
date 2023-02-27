@@ -1,0 +1,6 @@
+Sarah Lee  - slee470
+Ted Lee    - tlee144
+Amy Mistri - amistri1
+
+Our program consists of the classes Card, FaceUpPile, SkipBoGame, Pile, Player,Hand, and DrawPile. FaceUpPile and DrawPile inherits from Pile and Pile has a member field of a vector of Cards. The Player class has member fields of name, stock, discard, and hand. The stock is a FaceupPile object and discard is a vector of FaceupPiles. SkipBoGame is declared a friend class so that it has access to the protected fields of Player. In the SkipBoGame class, we have protected variables of peep, nump, draw, build, curp, sizeStock, and storedBuild. Field peep is a vector of Players, nump is the total number of players, draw is a DrawPile, build is a vector of FaceUpPiles, curp is the curren tplayer position within the player vector, sizeStock is the stock pile size indicated by user, and storedBuild is a vector of FaceUpPiles. Inside SkipBoGame.cpp, there is a makeMove function that reads in the user's action commands and delegates to stockMove, handMove, and discardMove which are functions in the Player class. Inside main.cpp, we make a SkipBoGame object and pass it into the playGame function to play game. Command line arguments are handled in main.cpp.
+
